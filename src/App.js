@@ -2,8 +2,12 @@
 import { GlobalStyle } from "./styles.js";
 import { ThemeProvider } from "styled-components";
 import { useState } from "react";
-import DataItem from "./components/dataItem.js"
-import {Switch, Route} from "react-router-dom"
+import DataList from "./components/dataList.js";
+import DataDetail from "./components/dataDetail.js";
+import NavBar from "./components/NavBar.js"
+import Home from "./components/Home.js"
+import { Switch, Route } from "react-router-dom";
+import movies from "./data.js";
 
 const theme = {
   light: {
@@ -31,17 +35,14 @@ function App() {
   return (
     <ThemeProvider theme={theme[currentTheme]}>
       <GlobalStyle />
+      <NavBar/>
       <Switch>
-      <Route path="/">
-      {/* Home Component Here */}
-      </Route>
-      <Route path="/Movies">
-      {/* Movie List Component Here */}
-      </Route>
-      <Route path="/Movies/:MovieName">
-      {/* Movie Detail Component Here */}
-      </Route>
-      <div><DataItem/></div>
+        <Route path="/">{/* Home Component Here */}</Route>
+        <Route path="/Movies">{/* Movie List Component Here */}</Route>
+        <DataList />
+        <Route path="/Movies/:MovieName">
+          <DataDetail />
+        </Route>
       </Switch>
     </ThemeProvider>
   );
