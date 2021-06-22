@@ -40,11 +40,11 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/movies">
-          <DataList />
-        </Route>
         <Route path="/movies/:movieSlug">
           <DataDetail />
+        </Route>
+        <Route path="/movies">
+          <DataList />
         </Route>
       </Switch>
     </ThemeProvider>
