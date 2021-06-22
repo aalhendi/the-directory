@@ -1,3 +1,4 @@
+import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
@@ -40,4 +41,19 @@ export const NavBarStyled = styled.nav`
   text-align: center;
   background-color: ${(props) => props.theme.backgroundColor}
   color: ${(props) => props.theme.mainColor};
+`;
+
+export const SearchBarStyled = styled.input`
+  text-align: center;
+`;
+
+export const Logo = styled(Link)`
+  padding: 0.75em;
+`;
+
+export const NavItem = styled(NavLink)`
+  color: ${(props) => props.theme.mainColor};
+  &.active {
+    color: red;
+  }
 `;

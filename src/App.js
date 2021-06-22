@@ -4,10 +4,9 @@ import { ThemeProvider } from "styled-components";
 import { useState } from "react";
 import DataList from "./components/dataList.js";
 import DataDetail from "./components/dataDetail.js";
-import NavBar from "./components/NavBar.js"
-import Home from "./components/Home.js"
+import NavBar from "./components/NavBar.js";
+import Home from "./components/Home.js";
 import { Switch, Route } from "react-router-dom";
-import movies from "./data.js";
 
 const theme = {
   light: {
@@ -32,15 +31,19 @@ function App() {
   const toggleTheme = () => {
     setcurrentTheme(currentTheme === "light" ? "dark" : "light");
   };
+
   return (
     <ThemeProvider theme={theme[currentTheme]}>
       <GlobalStyle />
-      <NavBar/>
+      <NavBar toggleTheme={toggleTheme}/>
       <Switch>
-        <Route path="/">{/* Home Component Here */}</Route>
-        <Route path="/Movies">{/* Movie List Component Here */}</Route>
-        <DataList />
-        <Route path="/Movies/:MovieName">
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/movies">
+          <DataList />
+        </Route>
+        <Route path="/movies/:movieSlug">
           <DataDetail />
         </Route>
       </Switch>

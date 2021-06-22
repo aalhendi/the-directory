@@ -1,5 +1,6 @@
 const movies = [
   {
+    id: 1,
     title: "Citizen Kane",
     released: " 5 September 1941",
     runtime: "1h 59min",
@@ -8,8 +9,10 @@ const movies = [
       "Following the death of publishing tycoon Charles Foster Kane, reporters scramble to uncover the meaning of his final utterance; 'Rosebud'.",
     poster:
       "https://m.media-amazon.com/images/M/MV5BYjBiOTYxZWItMzdiZi00NjlkLWIzZTYtYmFhZjhiMTljOTdkXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX667_CR0,0,667,999_AL_.jpg",
+    slug: "citizen-kane",
   },
   {
+    id: 2,
     title: "Full Metal Jacket",
     released: "10 July 1987",
     runtime: "1h 56min",
@@ -18,8 +21,10 @@ const movies = [
       "A pragmatic U.S. Marine observes the dehumanizing effects the Vietnam War has on his fellow recruits from their brutal boot camp training to the bloody street fighting in Hue.",
     poster:
       "https://m.media-amazon.com/images/M/MV5BNzkxODk0NjEtYjc4Mi00ZDI0LTgyYjEtYzc1NDkxY2YzYTgyXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,666,1000_AL_.jpg",
+    slug: "full-metal-jacket",
   },
   {
+    id: 3,
     title: "Taxi Driver",
     released: "9 February 1976",
     runtime: "1h 54min",
@@ -28,8 +33,10 @@ const movies = [
       "A mentally unstable veteran works as a nighttime taxi driver in New York City, where the perceived decadence and sleaze fuels his urge for violent action by attempting to liberate a presidential campaign worker and an underage prostitute.",
     poster:
       "https://m.media-amazon.com/images/M/MV5BM2M1MmVhNDgtNmI0YS00ZDNmLTkyNjctNTJiYTQ2N2NmYzc2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,658,1000_AL_.jpg",
+    slug: "taxi-driver",
   },
   {
+    id: 4,
     title: "Scarface",
     released: "9 December 1983",
     runtime: "2h 50min",
@@ -38,8 +45,10 @@ const movies = [
       "In 1980 Miami, a determined Cuban immigrant takes over a drug cartel and succumbs to greed.",
     poster:
       "https://m.media-amazon.com/images/M/MV5BNjdjNGQ4NDEtNTEwYS00MTgxLTliYzQtYzE2ZDRiZjFhZmNlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,666,1000_AL_.jpg",
+    slug: "scarface",
   },
   {
+    id: 5,
     title: "Lawrence of Arabia",
     released: "11 December 1962",
     runtime: "3h 48min",
@@ -48,8 +57,10 @@ const movies = [
       "The story of T.E. Lawrence, the English officer who successfully united and led the diverse, often warring, Arab tribes during World War I in order to fight the Turks.",
     poster:
       "https://m.media-amazon.com/images/M/MV5BYWY5ZjhjNGYtZmI2Ny00ODM0LWFkNzgtZmI1YzA2N2MxMzA0XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SY1000_CR0,0,693,1000_AL_.jpg",
+    slug: "lawrence-of-arabia",
   },
   {
+    id: 6,
     title: "The Sting",
     released: "25 December 1973",
     runtime: "2h 9min",
@@ -57,8 +68,10 @@ const movies = [
     plot: "Two grifters team up to pull off the ultimate con.",
     poster:
       "https://m.media-amazon.com/images/M/MV5BNGU3NjQ4YTMtZGJjOS00YTQ3LThmNmItMTI5MDE2ODI3NzY3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg",
+    slug: "the-sting",
   },
   {
+    id: 7,
     title: "A Separation",
     released: "28 June 2012",
     runtime: "2h 3min",
@@ -67,6 +80,7 @@ const movies = [
       "A married couple are faced with a difficult decision - to improve the life of their child by moving to another country or to stay in Iran and look after a deteriorating parent who has Alzheimer's disease.",
     poster:
       "https://m.media-amazon.com/images/M/MV5BZDRiZDY2YmEtZjMzNi00YTM4LWJkMmItYjFkNTQxMjQxNjA4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_CR0,0,690,1000_AL_.jpg",
+    slug: "a-separation",
   },
 ];
 
