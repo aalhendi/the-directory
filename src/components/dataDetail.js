@@ -16,7 +16,7 @@ const DataDetail = () => {
       <p>{movie.genre}</p>
       <p>{movie.runtime}</p>
       <p>{movie.plot}</p>
-      <Link>
+      <Link to="/movies">
         <button>Back</button>
       </Link>
     </DataDetailWrapper>
