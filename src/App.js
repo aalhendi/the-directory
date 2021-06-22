@@ -26,10 +26,10 @@ const theme = {
 };
 
 function App() {
-  const [currentTheme, setcurrentTheme] = useState("light");
+  const [currentTheme, setCurrentTheme] = useState("light");
 
   const toggleTheme = () => {
-    setcurrentTheme(currentTheme === "light" ? "dark" : "light");
+    setCurrentTheme(currentTheme === "light" ? "dark" : "light");
   };
 
   return (
